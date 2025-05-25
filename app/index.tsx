@@ -68,6 +68,14 @@ export default function HomePage() {
         }
     }
 
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         refetchTemp()
+    //     }, 5000)
+
+    //     return () => clearInterval(interval)
+    // }, [])
+
     const renderItem = ({ item, index }: any) => (
         <View style={[styles.tableRow, index % 2 === 0 ? styles.tableRowEven : styles.tableRowOdd]}>
             <ThemedText style={styles.tableCell}>{item.time}</ThemedText>
@@ -131,7 +139,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#121822',
         paddingHorizontal: 24,
-        paddingTop: 70, // increased top padding for better vertical balance
+        paddingTop: 60, // increased top padding for better vertical balance
     },
     header: {
         flexDirection: 'row',
