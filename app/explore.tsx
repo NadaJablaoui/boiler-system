@@ -1,6 +1,6 @@
 import React from 'react'
 import { Controller, useForm } from 'react-hook-form'
-import { KeyboardAvoidingView, Platform, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+import { KeyboardAvoidingView, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
 
 import { ThemedText } from '@/components/ThemedText'
 import { ThemedView } from '@/components/ThemedView'
@@ -23,8 +23,8 @@ export default function TabTwoScreen() {
 
     const onSubmit = async (data: any) => {
         console.log('Login data:', data)
-        if (data.email === 'admin@admin.com' && data.password === '123456') {
-            await setItemAsync('token', 'admin123456')
+        if (data.email === 'post8@gmail.com' && data.password === '123456') {
+            await setItemAsync('token', 'post8123456')
             Toast.show({
                 type: ALERT_TYPE.SUCCESS,
                 title: 'Logged in',
@@ -35,7 +35,7 @@ export default function TabTwoScreen() {
     }
 
     return (
-        <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined} style={styles.container}>
+        <KeyboardAvoidingView behavior='padding' style={styles.container}>
             <ThemedView style={styles.titleContainer}>
                 <ThemedText type='title' style={styles.titleText}>
                     ⚙️ Monitoring System
