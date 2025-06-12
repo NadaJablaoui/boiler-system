@@ -1,73 +1,70 @@
 {
-  "expo": {
-    "name": "boiler-system",
-    "slug": "boiler-system",
-    "owner": "ghofranekhaled",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "boilersystem",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.nada555.boilersystem",
-      "usesCleartextTraffic": true,
-      "permissions": [
-        "INTERNET",
-        "INTERNET"
-      ]
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ],
-      [
-        "expo-network-security-config",
-        {
-          "domains": [
-            {
-              "domain": "192.168.4.1",
-              "includeSubdomains": true,
-              "cleartext": true
+    "expo": {
+        "name": "boiler-system",
+        "slug": "boiler-system-v2",
+        "owner": "ghofranekhaled",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/images/icon.png",
+        "scheme": "boilersystem",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/images/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "edgeToEdgeEnabled": true,
+            "package": "com.nada555.boilersystem",
+            "usesCleartextTraffic": true,
+            "permissions": ["INTERNET", "INTERNET"]
+        },
+        "web": {
+            "bundler": "metro",
+            "output": "static",
+            "favicon": "./assets/images/favicon.png"
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "expo-splash-screen",
+                {
+                    "image": "./assets/images/splash-icon.png",
+                    "imageWidth": 200,
+                    "resizeMode": "contain",
+                    "backgroundColor": "#ffffff"
+                }
+            ],
+            [
+                "expo-network-security-config",
+                {
+                    "domains": [
+                        {
+                            "domain": "192.168.4.1",
+                            "includeSubdomains": true,
+                            "cleartext": true
+                        }
+                    ]
+                }
+            ]
+        ],
+        "experiments": {
+            "typedRoutes": true
+        },
+        "extra": {
+            "router": {},
+            "eas": {
+                "projectId": "ghofranekhaled-boilersystem-v2"
             }
-          ]
+        },
+        "runtimeVersion": {
+            "policy": "appVersion"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
         }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "1d35824e-2dc7-482b-9f6a-d03d8dbdd030"
-      }
-    },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/1d35824e-2dc7-482b-9f6a-d03d8dbdd030"
     }
-  }
 }
